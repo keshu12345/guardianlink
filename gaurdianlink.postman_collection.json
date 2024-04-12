@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "6e16d734-5e6a-4d29-bc21-d25775ba9fd1",
+		"name": "gaurdianlink",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11380686"
+	},
+	"item": [
+		{
+			"name": "create nodea",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5ld1VzZXI0MSIsImV4cCI6MTcxMjU3MjY1Nn0.dq9AVpS0kruwuSgd7aHWuM1CLSOgbMUksCbfKp2F-LQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"height\": 10,\n  \"hash\": \"someUniqueHashValue\",\n  \"parent\": \"parentHashValue\",\n  \"encoded\": \"YWJjZA==\"  \n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/blocks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blocks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin nodea",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"newUser1\", \"password\": \"newPassword1\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "singup nodea",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"keshav\", \"password\": \"newPassword1\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update nodea",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlZpdmVrYW5hbmQxMjM1IiwiZXhwIjoxNzEyNzgwNzE4fQ.EEpn8eZqvPNSnnySlqhy74bliv7S1Kf0j1ArmncyEiw"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n           \"height\": 66,\n           \"hash\": \"Hash \",\n           \"parent\": \"link_updated_expird\",\n           \"status\":\"complted\",\n           \"encoded\": \"YWJjZA==\"\n         }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/blocks/66",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"blocks",
+						"66"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get nodea",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNzEyNTc2MDcxfQ.r9QnU7Mux22Bt6ia4liAcyiFSIoZErJXGcieFkcHLN4"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/blocks/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"blocks",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup nodeb",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"keshav\", \"password\": \"newPassword1\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin nodeb",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"keshav\", \"password\": \"newPassword1\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get nodeb",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpdmVrYW5hbmQxMjY1IiwiZXhwIjoxNzEyNzUwMzYwfQ.o50Ry_bE-yMgmMGcXBg6K2abuFvb02eTcgqf3kTA0XA"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Require-Auth",
+						"value": "false",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/api/blocks/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"blocks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update nodeb",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"height\": 10,\n  \"hash\": \"someUniqueHashValue\",\n  \"parent\": \"keshav\",\n  \"encoded\": \"YWJjZA==\"  \n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8081/blocks/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"blocks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nodeb create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"height\": 9090,\n  \"hash\": \"someUniqueHashValue\",\n  \"parent\": \"parentHashValue\",\n  \"encoded\": \"YWJjZA==\"  \n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/blocks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"blocks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

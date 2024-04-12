@@ -1,0 +1,11 @@
+mode: set
+github.com/keshu12345/guardianlink/toolkit/config.go:13.103,30.29 10 1
+github.com/keshu12345/guardianlink/toolkit/config.go:30.29,31.44 1 1
+github.com/keshu12345/guardianlink/toolkit/config.go:31.44,33.19 2 1
+github.com/keshu12345/guardianlink/toolkit/config.go:33.19,39.5 1 0
+github.com/keshu12345/guardianlink/toolkit/config.go:43.2,45.16 3 1
+github.com/keshu12345/guardianlink/toolkit/config.go:45.16,47.3 1 1
+github.com/keshu12345/guardianlink/toolkit/config.go:50.2,50.24 1 1
+github.com/keshu12345/guardianlink/toolkit/config.go:50.24,57.17 7 1
+github.com/keshu12345/guardianlink/toolkit/config.go:57.17,59.4 1 0
+github.com/keshu12345/guardianlink/toolkit/config.go:62.2,63.12 2 1

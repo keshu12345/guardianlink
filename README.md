@@ -2,8 +2,7 @@
 There is two nodes nodea and nodeb sync together if any one create or update
 
 
-# My-Favorite-Artist
-
+# Distributed System with NodeA and NodeB Service
 
 
 <!-- TABLE OF CONTENTS -->
@@ -29,9 +28,9 @@ There is two nodes nodea and nodeb sync together if any one create or update
 
 
 
-### Built With
+### Built Withss
 
-These framework/Libraries and tools are require to build My-Favorite-Artist Service
+These framework/Libraries and tools are require to build Nodaa and Nodeb servicess
 
 * ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
 * ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)

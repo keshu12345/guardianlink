@@ -1,0 +1,14 @@
+
+environmentName: 'local'
+server:
+  Port: 9090
+  ReadTimeout: 5
+  WriteTimeout: 15
+  IdleTimeout: 20
+
+db:
+  Filepath: /guardianlink/
+  Databasename: nodea
+  
+swagger:
+  host: localhost:8080
